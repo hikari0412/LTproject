@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cheeta_hairuber
+  m_Shader: {fileID: 4800000, guid: 40efe180705d18d42b3aa510bda0d420, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - _ANISOTROPIC_SPECULAR
+  m_InvalidKeywords:
+  - _BLEND_UV2
+  - _RAMPMAP
+  - _SHADOW_ADDITIONAL_BIAS
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2015
+  stringTagMap: {}
+  disabledShaderPasses:
+  - GFCharDirOutlineEx
+  - GFStencilOutline
+  - GFCharHairTransBattle
+  - GFCharHairTrans
+  - GFHairShadow
+  - GFCharFaceShadow
+  - GFCharHairTransE
+  - GFStencilBGOutline
+  - GFStencilUnderBG
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: ab8b90bc9210b97488b4d98b4167eed0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BlendTex:
+        m_Texture: {fileID: 2800000, guid: 216a57963ae39564cac5b73ea86a72a8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RMOTex:
+        m_Texture: {fileID: 2800000, guid: c1ec1cb2facee484888148aed87c7af8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RampMap:
+        m_Texture: {fileID: 2800000, guid: 03c4acd1462d9864695fad05c3f65223, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AdjustShadowBias: 1
+    - _AnisotropicGGX: 0
+    - _AnisotropicGXX: 0
+    - _AnisotropicSpecular: 1
+    - _Anisotropy: 1
+    - _AnisotropyShift: 0.05
+    - _AoeSelect: 0
+    - _BaseInsideLerp: 0
+    - _BlendSmoothness: 0.1
+    - _CampColorIndex: 0
+    - _CharSaturation: 0
+    - _ConcealLerp: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DirOutlineWidthExt: 0
+    - _DissolveIntensity: 0
+    - _DoubleSided: 0
+    - _EmissiveIntensity: 0
+    - _FakeIntensity: 0.25
+    - _FurShellThickness: 0.5
+    - _HolographicIntensity: 0
+    - _HolographicWidth: 200
+    - _InsideColorBias: 0.5
+    - _InsideColorContrast: 1
+    - _InsideHeightBias: 0
+    - _InsideHeightContrast: 1
+    - _LightIndex: 0
+    - _OutlineIntensity: 1
+    - _OutlineOffset: 0
+    - _OutlineWidth: 3
+    - _OutlineZBias: 0
+    - _ReflectionFresnelF0: 0
+    - _ReflectionIntensity: 0.35
+    - _SSSIntensity: 0.5
+    - _ShadowBiasDistance: 0
+    - _StencilComp: 0
+    - _StencilOp: 2
+    - _StencilRefC: 203
+    - _StencilRefCharStart: 200
+    - _StencilRefE: 204
+    - _StencilRefF: 200
+    - _StencilRefH: 203
+    - _StockingFalloffPower: 1
+    - _Tutorial: 0
+    - _UpAxis: 1
+    - _UseAlphaTest: 0
+    - _UseBlendTex: 0
+    - _UseDecal: 0
+    - _UseFurShell: 0
+    - _UseGIFlatten: 0
+    - _UseRampMap: 1
+    - _UseSpecularUV2: 1
+    - _UseStockingFalloff: 0
+    - _UseSubsurfaceScattering: 0
+    - _UseVolumetricEffect: 0
+    - _WriteMask: 255
+    m_Colors:
+    - _AoeSelectColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BaseColor: {r: 0.8509804, g: 0.8039216, b: 0.8039216, a: 1}
+    - _FinalTint: {r: 1, g: 1, b: 1, a: 1}
+    - _HolographicColor: {r: 1, g: 1, b: 1, a: 1}
+    - _InsideBaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _OnHitColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _StockingCenterColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StockingFalloffColor: {r: 0.09999997, g: 0, b: 0, a: 1}
+    - _TutorialColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
