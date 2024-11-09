@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat_SHSaria_cloth2_test
+  m_Name: mat_SHSaria_cloth1
   m_Shader: {fileID: 4800000, guid: 40efe180705d18d42b3aa510bda0d420, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -34,7 +34,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: d3287b7cc538ab1429fd6dfda1952259, type: 3}
+        m_Texture: {fileID: 2800000, guid: b97163a1d770adf4a8adf64a7b18ca0f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BlendTex:
@@ -42,7 +42,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: a271a1c6fa59d4544ab20d4062c3a714, type: 3}
+        m_Texture: {fileID: 2800000, guid: 430c456a74b5cd841892a13617a6d386, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DecalMap:
@@ -50,7 +50,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RMOTex:
-        m_Texture: {fileID: 2800000, guid: 88158f574aec12b4baee0b9f49a6f2b6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 71800789579a85d4891704c188b5410d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _RampMap:

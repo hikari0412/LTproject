@@ -29,14 +29,20 @@ float4 _OutlineShadowColor;
 float _OutlineWidth;
 float _OutlineZBias;
 float _OutlineIntensity;
+
+//FrontHairShadowAdd
+float _UseFrontHairShadow;
+float _FrontHairShadowRampOffset;
+
 CBUFFER_END
 
 //TEXTURE2D(_BaseMap);            SAMPLER(sampler_BaseMap);
 //TEXTURE2D(_BumpMap);           SAMPLER(sampler_BumpMap);
-TEXTURE2D(_RMOTex);         SAMPLER(sampler_RMOTex);
+TEXTURE2D(_RMOTex);               SAMPLER(sampler_RMOTex);
 TEXTURE2D(_DissolveTex);          SAMPLER(sampler_DissolveTex);
-TEXTURE2D(_BlendTex);       SAMPLER(sampler_BlendTex);
-TEXTURE2D(_RampMap);         SAMPLER(sampler_RampMap);
+TEXTURE2D(_BlendTex);             SAMPLER(sampler_BlendTex);
+TEXTURE2D(_RampMap);              SAMPLER(sampler_RampMap);
+TEXTURE2D(_FaceMap);              SAMPLER(sampler_FaceMap);
 
 struct appdata_ex
 {

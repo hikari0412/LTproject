@@ -7,12 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat_SHSaria_body_stock_test
+  m_Name: mat_SHSaria_body_skin
   m_Shader: {fileID: 4800000, guid: 40efe180705d18d42b3aa510bda0d420, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _USE_STOCKING
+  m_ValidKeywords: []
   m_InvalidKeywords:
   - _GI_FLATTEN
   - _RAMPMAP
@@ -113,7 +112,7 @@ Material:
     - _UseGIFlatten: 1
     - _UseRampMap: 1
     - _UseSpecularUV2: 0
-    - _UseStockingFalloff: 1
+    - _UseStockingFalloff: 0
     - _UseSubsurfaceScattering: 0
     - _UseVolumetricEffect: 0
     - _WriteMask: 255
@@ -126,7 +125,7 @@ Material:
     - _OnHitColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineShadowColor: {r: 0.11320752, g: 0.11320752, b: 0.11320752, a: 1}
-    - _StockingCenterColor: {r: 0.9622642, g: 0.9198531, b: 0.9032574, a: 1}
-    - _StockingFalloffColor: {r: 0.5566038, g: 0.4049644, b: 0.36494306, a: 1}
+    - _StockingCenterColor: {r: 1, g: 1, b: 1, a: 1}
+    - _StockingFalloffColor: {r: 0.09999997, g: 0, b: 0, a: 1}
     - _TutorialColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

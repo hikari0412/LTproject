@@ -49,6 +49,17 @@ Shader "GF2/Character/Uber"
         [Toggle(_USE_BLEND_TEX)] _UseBlendTex ("Use Blend Tex", Float) = 0
         _BlendTex ("Blend Tex", 2D) = "gray" {}
         _BlendSmoothness ("Blend Smoothness", Range(0, 1)) = 0.1
+
+        [Toggle(_FRONT_HAIR_SHADOW)] _UseFrontHairShadow ("Use FrontHairShadow", Float) = 0
+        _FrontHairShadowRampOffset ("FrontHairShadowRampOffset", Range(0, 1)) = 0.1
+
+        _StencilRef("Stencil Reference Value", Int) = 32
+        _StencilReadMask("Stencil ReadMask", Int) = 255 // Keep
+        _StencilWriteMask("Stencil WriteMask", Int) = 255 // Keep
+        [Enum(UnityEngine.Rendering.CompareFunction)] _StencilComp("Stencil Comparison Function", Int) = 8 // Always
+        [Enum(UnityEngine.Rendering.StencilOp)] _StencilPass("Stencil Pass Operation", Int) = 0 // Keep
+        [Enum(UnityEngine.Rendering.StencilOp)] _StencilFail("Stencil Fail Operation", Int) = 0 // Keep
+        [Enum(UnityEngine.Rendering.StencilOp)] _StencilZFail("Stencil Depth Fail Operation", Int) = 0 // Keep
     }
     SubShader
     {
@@ -64,13 +75,22 @@ Shader "GF2/Character/Uber"
                 "LIGHTMODE" = "GFCharForward"
             }
             Cull Off
-            Stencil
-            {
-                WriteMask 0
-                Comp [Disabled]
-                Pass Keep
-                Fail Keep
-                ZFail Keep
+            Stencil {
+                Ref [_StencilRef]
+                ReadMask [_StencilReadMask]
+                WriteMask [_StencilWriteMask]
+                Comp [_StencilComp]
+                Pass [_StencilPass]
+                Fail [_StencilFail]
+                ZFail [_StencilZFail]
+                //CompBack <comparisonOperationBack>
+                //PassBack <passOperationBack>
+                //FailBack <failOperationBack>
+                //ZFailBack <zFailOperationBack>
+                //CompFront <comparisonOperationFront>
+                //PassFront <passOperationFront>
+                //FailFront <failOperationFront>
+                //ZFailFront <zFailOperationFront>
             }
             HLSLPROGRAM
             #pragma vertex GF2Vertex

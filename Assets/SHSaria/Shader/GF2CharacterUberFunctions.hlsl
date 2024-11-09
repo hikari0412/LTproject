@@ -124,19 +124,41 @@ half3 GetSpecularRamp(half3 lightDir, half3 H, half VDotH, half roughnessRimInte
     return rampSpecular;
 }
 
-half3 GetDiffuse(half diffuse, bool useRampMap, half colorY)
+// half3 GetDiffuse(half diffuse, bool useRampMap, half colorY )
+// {
+//     half3 diffuseColor;
+//     if (useRampMap) // 皮膚透射
+//     {
+//         half2 rampUV1 = half2(diffuse, colorY);
+//         half3 diffuseRamp = SAMPLE_TEXTURE2D_LOD(_RampMap, sampler_RampMap, rampUV1, 0.0);
+//         half sssIntensity = min(1.0 / rampUV1.x * diffuse, 1.0);
+//         diffuseColor = diffuseRamp * sssIntensity;
+//     }
+//     else
+//     {
+//         diffuseColor = diffuse;
+//     }
+//     return diffuseColor;
+// }
+
+half3 GetDiffuse(half diffuse, bool useRampMap, half colorY )
 {
     half3 diffuseColor;
     if (useRampMap) // 皮膚透射
     {
         half2 rampUV1 = half2(diffuse, colorY);
+        if(_UseFrontHairShadow > 0.5)
+        {
+            rampUV1 = half2(max(diffuse - _FrontHairShadowRampOffset , 0.01), colorY) ; //判断前发阴影并调色
+        }
+        
         half3 diffuseRamp = SAMPLE_TEXTURE2D_LOD(_RampMap, sampler_RampMap, rampUV1, 0.0);
         half sssIntensity = min(1.0 / rampUV1.x * diffuse, 1.0);
         diffuseColor = diffuseRamp * sssIntensity;
     }
     else
     {
-        diffuseColor = diffuse;
+        diffuseColor = half3(diffuse,diffuse,diffuse);
     }
     return diffuseColor;
 }
@@ -209,7 +231,7 @@ half3 GetFaceDiffuse(half4 uv, inout half2 faceLightDir, inout half sdfFaceDiffu
     bool isFrontLight = sdfBackDiffuseIntensityMask < 1.0;
     sdfFaceDiffuse = isFrontLight ? sdfDiffuseFront : sdfDiffuseBack;
 
-    half diffusSDF = sdfIntensity * sdfFaceDiffuse;
+    half diffusSDF = sdfIntensity * sdfFaceDiffuse ;
 
     return GetDiffuse(diffusSDF, useRampMap, 0.125);
 }
@@ -519,6 +541,7 @@ half4 GF2Fragment(v2f input) : SV_Target
     #if (!_ANISOTROPIC_SPECULAR)
         finalColor = emissiveColor * rmoTex.w + finalColor;
     #endif
+
     half3 finalTintColor = finalColor * _FinalTint.xyz;
     half4 output = half4(finalTintColor, 1.0);
     return output;

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: mat_SHsaria_eyenewadd 1
+  m_Name: mat_SHsaria_eyenewadd
   m_Shader: {fileID: 4800000, guid: d37e489977948724fa4234b5519335c8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
