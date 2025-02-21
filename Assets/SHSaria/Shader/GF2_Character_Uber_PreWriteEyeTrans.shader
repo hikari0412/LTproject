@@ -1,4 +1,4 @@
-Shader "Ruri/SpecialGBuffer/NPR/Character/PreWriteEyeTrans"
+Shader "GF2/Character/Uber/PreWriteEyeTrans"
 {
     Properties 
     {

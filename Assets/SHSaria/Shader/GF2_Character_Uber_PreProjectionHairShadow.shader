@@ -1,4 +1,4 @@
-Shader "Ruri/SpecialGBuffer/NPR/Character/PreProjectionHairShadow"
+Shader "GF2/Character/Uber/PreProjectionHairShadow"
 {
     Properties 
     {
