@@ -1,7 +1,5 @@
 URP开启PostProcessing后render texture背景无法设置为透明
-解决：
-Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/UberPost.shader
-将这个shader的
-return half4(color, 1.0);
-改为了
-return half4(color, SAMPLE_TEXTURE2D_X(_SourceTexture, sampler_LinearClamp, SCREEN_COORD_REMOVE_SCALEBIAS(uv)).a);
+-用双层嵌套rendertexture解决，一层渲染颜色+postprocess，一层渲染alpha，然后用mask叠加
+
+未解决的问题：
+-如果canvas scaler用scale with screensize的话，会导致更改分辨率时UI_Title里的rendertexture相机跟着位移（总之先放到了player下面）
