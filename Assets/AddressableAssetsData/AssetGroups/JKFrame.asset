@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: JKFrame
+  m_EditorClassIdentifier: 
+  m_GroupName: JKFrame
+  m_Data:
+    m_SerializedData: []
+  m_GUID: e03c1a6c2c23fbf4f8e4527d5fe82a3a
+  m_SerializeEntries:
+  - m_GUID: e6c210616e140fd4390b6abb619baec9
+    m_Address: AudioPlay
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1a9e3566c2334ff40a00700f694ad4ab, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 87be21a7dea5564479cd47e3efd96cdc, type: 2}
+    - {fileID: 11400000, guid: e69e3e3722c468847addaa230f64ec8f, type: 2}

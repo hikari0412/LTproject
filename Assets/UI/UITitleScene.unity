@@ -451,6 +451,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7819552213194791735, guid: 228c433b23c5a274d9826bf93540cc57, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7819552213220038759, guid: 228c433b23c5a274d9826bf93540cc57, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1242,6 +1246,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_Title
       objectReference: {fileID: 0}
+    - target: {fileID: 2722510388057752313, guid: 1f99b28855e2cb040a56e240fb7616e3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849814580425086022, guid: 1f99b28855e2cb040a56e240fb7616e3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7849814580425086022, guid: 1f99b28855e2cb040a56e240fb7616e3, type: 3}
+      propertyPath: m_ShowMaskGraphic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1289,7 +1305,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954210071021028712}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!1 &2681658217866418990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1432,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2681658217866418990}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!4 &7775703330950895681
 Transform:
   m_ObjectHideFlags: 0
